@@ -30,7 +30,7 @@ if [ -n "$PLATFORM" ]; then
 fi
 
 # 镜像版本
-VERSION="1.0.0"
+VERSION="1.0.1"
 IMAGE_NAME="zbjumper/builder-node"
 
 # Dockerfile 目录列表

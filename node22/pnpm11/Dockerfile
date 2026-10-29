@@ -21,7 +21,7 @@ RUN apk add --no-cache --virtual .build-deps \
     && apk del .build-deps
 
 # 按镜像架构下载固定版本的 glab，git 显式安装供 CI 使用
-ARG GLAB_VERSION=1.124.0
+ARG ARG GLAB_VERSION=1.126.0
 RUN apk add --no-cache git ca-certificates \
     && apk add --no-cache --virtual .glab-download curl \
     && case "$(apk --print-arch)" in \
